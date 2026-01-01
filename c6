@@ -1,0 +1,101 @@
+这是为您准备的 **Chapter 6 软件测试 (Software Testing)** 的详细章节总结。
+
+我延续了之前的 **Markdown 排版**、**中英文对照** 以及 **全面内容覆盖** 的格式，确保您可以直接复制到 GitHub 使用。
+
+---
+
+# 软件测试笔记 (Software Testing Notes)
+
+## Chapter 6: 软件测试 (Software Testing)
+
+### 1. 软件测试基础 (Software Testing Fundamentals)
+
+* **Quality & Reliability (质量与可靠性)**: Software quality depends on design, development, testing, and implementation. A software is reliable if it does not produce dangerous or costly failures.
+* 软件质量取决于设计、开发、测试和实施。如果在合理使用下不产生危险或代价高昂的故障，则该软件是可靠的。
+
+
+* **Key Principle (核心原则)**: Testing can only demonstrate the presence of errors. It cannot show that there are no errors in a program.
+* 测试只能证明错误的存在，而不能证明程序中没有错误。
+
+
+
+### 2. 测试的主要目标 (Main Goals of Testing)
+
+* **Validation Testing (确认测试)**: To demonstrate to the developer and the customer that the software meets the requirements.
+* **确认测试**：向开发人员和客户证明软件符合需求。
+
+
+* **Defect Testing (缺陷测试)**: To discover faults or defects where the behavior of the software is incorrect or does not conform to its specification.
+* **缺陷测试**：发现软件行为错误、不理想或不符合规范的故障或缺陷。
+
+
+
+### 3. 测试层级 (Levels of Testing)
+
+* **Unit Testing (单元测试)**: Testing individual components in isolation.
+* **单元测试**：孤立地测试单个组件。
+
+
+* **Integration Testing (集成测试)**: Testing a group of linked units to find errors in their interactions.
+* **集成测试**：测试一组连接的单元，以发现它们交互中的错误。
+
+
+* **System Testing (系统测试)**: Testing the entire integrated system to verify it meets requirements.
+* **系统测试**：测试整个集成系统以验证其符合需求。
+
+
+* **Acceptance Testing (验收测试)**: Conducted by the user to decide whether to accept the system.
+* **验收测试**：由用户进行，以决定是否接受该系统。
+
+
+
+### 4. 测试技术 (Testing Techniques)
+
+* **Black-box Testing (黑盒测试/功能测试)**: Focuses on the functional requirements. Tests are based on the system specification without knowledge of internal code.
+* **黑盒测试**：专注于功能需求。测试基于系统规范，不了解内部代码结构。
+
+
+* **White-box Testing (白盒测试/结构测试)**: Focuses on the internal structure and logic of the code. Aims to exercise all program statements at least once.
+* **白盒测试**：专注于代码的内部结构和逻辑。目标是至少执行一次所有程序语句。
+
+
+
+### 5. 测试原则与指南 (Testing Principles & Guidelines)
+
+* **Traceable to Requirements (可追溯至需求)**: All tests should be traceable to customer requirements to avoid severe defects.
+* 所有测试都应能追溯到客户需求，以避免严重的缺陷。
+
+
+* **Early Planning (早期规划)**: Testing should be planned long before it begins. Test plans start after requirements are complete.
+* 测试应在开始前很久就进行规划。测试计划在需求模型完成后即可开始。
+
+
+* **Pareto Principle (帕累托法则/80-20法则)**: 80% of all errors are likely traceable to 20% of program components.
+* 80%的错误可能源于20%的程序组件。
+
+
+* **Small to Large (由小到大)**: Testing should begin "in small" (individual components) and progress toward "in the large" (entire system).
+* 测试应“从小到大”进行，先关注单个组件，再转向整个系统。
+
+
+* **Exhaustive Testing is Impossible (穷尽测试是不可能的)**: It is impossible to test every combination of paths.
+* 穷尽测试是不可能的：测试所有路径组合是不可能的。
+
+
+* **Independent Third Party (独立第三方)**: Testing is most effective when conducted by an independent party to avoid developer bias.
+* 独立第三方：由独立方进行测试最为有效，可避免开发者的主观偏差。
+
+
+
+---
+
+## 核心术语对照表 (Key Glossary)
+
+| 英文 (English) | 中文 (Chinese) | 解释 (Explanation) |
+| --- | --- | --- |
+| **Validation** | **确认/验证** | Are we building the product right? (是否按需求构建)。 |
+| **Verification** | **验证/核实** | Are we building the right product? (是否构建了正确的产品)。 |
+| **Defect** | **缺陷** | An error or flaw in the software. |
+| **Traceability** | **可追溯性** | The ability to link requirements to test cases. |
+| **Integration** | **集成** | Combining components into a larger system. |
+| **Regression Testing** | **回归测试** | Re-testing after changes to ensure old features still work. |
