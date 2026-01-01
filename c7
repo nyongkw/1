@@ -1,0 +1,116 @@
+这是为您准备的 **Chapter 7 软件支持与维护 (Software Maintenance & Support)** 的详细章节总结。
+
+我延续了您要求的 **Markdown 排版**、**中英文对照** 以及 **全面内容覆盖** 的格式，确保您可以直接复制到 GitHub 使用。
+
+---
+
+# 软件支持与维护笔记 (Software Maintenance & Support Notes)
+
+## Chapter 7: 软件支持与维护 (Software Maintenance & Support)
+
+### 1. 客户支持概述 (Customer Support Overview)
+
+* **Inevitability of Defects (缺陷的不可避免性)**: Despite developers' hopes for "user-friendly" and "high-quality" software, defects are inevitable in large and complex systems.
+* 尽管开发人员希望软件“用户友好”且“高质量”，但在大型复杂系统中，缺陷是不可避免的。
+
+
+* **Support Cost (支持费用)**: Customer support for large software may charge fees as high as 10% to 20% of the product price per year.
+* 大型软件的客户支持年费可能高达产品价格的 10% 到 20%。
+
+
+* **Support Activities (支持活动)**:
+* **Product Defect Support**: Handling bugs and faults. (产品缺陷支持：处理错误和故障)。
+* **Product Non-defect Support**: Education, mentoring, and user guidance. (产品非缺陷支持：如教育培训和指导)。
+
+
+
+### 2. 用户问题到达率 (User Problem Arrival Rate)
+
+* **Initial Surge (初始激增)**: After release, there is typically a surge of user questions and problem reports, following an exponential curve (Rayleigh curve).
+* 软件发布后，通常会出现用户提问和问题报告的激增，遵循指数曲线（瑞利曲线）。
+
+
+* **Phases (阶段)**:
+* **Early Phase (早期阶段)**: Arrival rate increases rapidly as users explore main functions and uncover "low-hanging fruit" problems.
+* 随着用户探索主要功能并发现显而易见的问题，问题到达率迅速上升。
+
+
+* **Later Phase (后期阶段)**: As major problems are fixed and users become familiar, the rate of new reports declines steadily.
+* 随着主要问题得到修复且用户变得熟悉，新报告的速率稳步下降。
+
+
+
+
+
+### 3. 客户支持组织结构 (Customer Support Organization)
+
+* **Frontline - Service & Support Representative (前线支持代表)**: Acts as the primary interface to customers and serves as their advocate.
+* 作为客户的主要接口，并充当客户的倡导者。
+
+
+* **Back-end - Technical Support (后端技术支持)**: Provides deeper technical expertise to resolve complex issues.
+* 提供更深层次的技术专业知识来解决复杂问题。
+
+
+
+### 4. 软件维护类型 (Types of Software Maintenance)
+
+* **Corrective Maintenance (改正性维护)**: Reactive modification of a software product performed after delivery to correct discovered problems.
+* 交付后进行的反应性修改，用于纠正发现的问题（修 Bug）。
+
+
+* **Adaptive Maintenance (适应性维护)**: Modifying the software to keep it usable in a changed or changing environment (e.g., new OS).
+* 修改软件以使其在变化的环境中保持可用（例如适配新操作系统）。
+
+
+* **Perfective Maintenance (完善性维护)**: Improving performance or maintainability, or adding new functional enhancements.
+* 提高性能或可维护性，或增加新的功能增强。
+
+
+* **Preventive Maintenance (预防性维护)**: Modifying software to detect and correct latent faults before they become effective faults.
+* 修改软件以在潜在故障变为实际故障前发现并纠正它们。
+
+
+
+### 5. 变更控制过程 (Change Control Process)
+
+* **Importance (重要性)**: Structured change control prevents chaos from untracked bug fixes and feature changes.
+* 结构化的变更控制可以防止由于未跟踪的错误修复和功能变更而导致的混乱。
+
+
+* **Change Request (变更请求)**: Requests from users, customers, or management. Some must be implemented urgently (e.g., fault repair).
+* 来自用户、客户或管理层的请求。部分请求必须紧急执行（如故障修复）。
+
+
+* **The Process (流程步骤)**:
+1. **Origination (发起)**: User or staff submits a request. (提交变更请求)。
+2. **Approval (审批)**: Review and decide to accept or reject. (审查并决定接受或拒绝)。
+3. **Action (执行)**: Developer implements approved changes. (开发人员实施已批准的变更)。
+4. **Tracking & Closure (跟踪与关闭)**: Monitor progress and record completion. (监控进度并记录完成情况)。
+
+
+
+### 6. 有效管理变更请求 (Managing Change Request Effectively)
+
+* **Simplicity (简约性)**: Avoid overly complex forms; only include fields that add value.
+* 避免过于复杂的表格；仅包含有价值的字段。
+
+
+* **Data Value (数据价值)**: Data helps organizations understand common defects, customer needs, and future feature directions.
+* 数据可以帮助组织了解常见产品缺陷、客户需求和未来功能方向。
+
+
+
+---
+
+## 核心术语对照表 (Key Glossary)
+
+| 英文 (English) | 中文 (Chinese) | 解释 (Explanation) |
+| --- | --- | --- |
+| **Corrective Maintenance** | **改正性维护** | Fixing errors found by users. |
+| **Adaptive Maintenance** | **适应性维护** | Adapting to new environments (OS, hardware). |
+| **Perfective Maintenance** | **完善性维护** | Adding features or improving performance. |
+| **Preventive Maintenance** | **预防性维护** | Preventing future problems through code cleanup. |
+| **Change Request (CR)** | **变更请求** | Formal proposal for a system modification. |
+| **Rayleigh Curve** | **瑞利曲线** | A model used to predict problem arrival rates. |
+| **Fault Repair** | **故障修复** | The act of fixing a technical bug. |
