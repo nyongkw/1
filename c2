@@ -1,0 +1,308 @@
+好的，我帮你**中英文对照翻译 + 结构化排版**，格式直接用 **Markdown**，非常适合 **copy 进 GitHub（README / Notes）** 👍
+（英文原文保留 + 中文解释）
+
+---
+
+# 📘 Chapter 2: Software Process Model
+
+---
+
+## 🔹 Part A：Software Process Overview
+
+## 第一部分：软件过程概述
+
+### **Software Process Definition**
+
+**软件过程定义**
+
+* **EN:** A sequence of activities leading to the production of a software product.
+* **中:** 一系列活动的集合，这些活动最终会产生一个软件产品。
+
+---
+
+### **Process Model**
+
+**过程模型**
+
+* **EN:** A framework to plan and control the flow of work, comprising specific activities and tasks.
+* **中:** 用于规划和控制软件开发工作流程的框架，由具体的活动和任务组成。
+
+---
+
+### **Core Activities**
+
+**核心活动**
+
+* **Specification（需求规格说明）**
+
+  * **EN:** Defining functionality and constraints.
+  * **中:** 定义系统的功能以及其限制条件。
+
+* **Development（开发）**
+
+  * **EN:** Producing the software.
+  * **中:** 编写并实现软件系统。
+
+* **Validation（验证）**
+
+  * **EN:** Ensuring software meets customer wants.
+  * **中:** 确保软件符合客户需求与期望。
+
+* **Evolution（演进）**
+
+  * **EN:** Evolving to meet changing needs.
+  * **中:** 随着需求变化不断改进和升级软件。
+
+---
+
+## 🔹 SDLC Models
+
+## 软件开发生命周期模型（SDLC）
+
+---
+
+### **Waterfall Model**
+
+**瀑布模型**
+
+* **EN:** Linear-Sequential Life Cycle.
+* **中:** 线性、顺序式的软件生命周期模型。
+
+#### **Phases（阶段）**
+
+```
+Requirements → Design → Implementation → Testing → Maintenance
+需求分析 → 设计 → 实现 → 测试 → 维护
+```
+
+* **Usage（适用场景）**
+
+  * **EN:** Embedded systems or large partner systems where hardware/software must interface.
+  * **中:** 适用于嵌入式系统或需要硬件与软件紧密配合的大型系统。
+
+* **Pros / Cons（优缺点）**
+
+  * **EN:** Systematic but rigid; does not allow backtracking easily.
+  * **中:** 结构清晰但非常死板，不容易回头修改错误。
+
+---
+
+### **Prototyping Model**
+
+**原型模型**
+
+* **EN:** Helps validate requirements when users struggle to express them.
+* **中:** 当用户难以清楚表达需求时，用于帮助确认需求。
+
+#### **Types（类型）**
+
+* **Throw-away Prototype（抛弃式原型）**
+
+  * **EN:** Built to understand requirements then discarded.
+  * **中:** 用于理解需求，完成后直接丢弃。
+
+* **Evolutionary Prototype（演化式原型）**
+
+  * **EN:** Prototype evolves into the final system.
+  * **中:** 原型不断改进，最终发展为正式系统。
+
+* **Pros（优点）**
+
+  * **EN:** Saves time/money, early user engagement.
+  * **中:** 节省时间与成本，用户能尽早参与。
+
+* **Cons（缺点）**
+
+  * **EN:** Management problems, potential poor reliability in throw-aways.
+  * **中:** 管理困难，抛弃式原型可能导致系统可靠性差。
+
+---
+
+### **Rapid Application Development (RAD)**
+
+**快速应用开发模型（RAD）**
+
+* **EN:** A “high-speed” waterfall model with modularized development by parallel teams.
+
+* **中:** 一种“高速”的瀑布模型，将系统模块化并由多个团队并行开发。
+
+* **Usage（适用条件）**
+
+  * **EN:** Requirements are clear, system is modular, sufficient manpower.
+  * **中:** 需求明确、系统可模块化、且人力资源充足。
+
+---
+
+### **Spiral Model**
+
+**螺旋模型**
+
+* **EN:** Risk-driven process model.
+
+* **中:** 以风险分析为核心的软件过程模型。
+
+* **EN:** Combines elements from multiple models based on risk.
+
+* **中:** 根据风险情况，融合多种模型的特点。
+
+#### **Process Loop（循环流程）**
+
+```
+Planning → Risk Analysis → Engineering → Evaluation
+计划 → 风险分析 → 工程实现 → 评估
+```
+
+（重复多次循环）
+
+---
+
+### **Agile Software Development**
+
+**敏捷软件开发**
+
+* **EN:** Incremental development with rapid feedback.
+* **中:** 通过小步快跑的方式进行开发，并快速获取反馈。
+
+#### **Main Elements（核心要素）**
+
+* **EN:** Minimal documentation
+  **中:** 最少化文档
+* **EN:** Informal communication
+  **中:** 非正式沟通
+* **EN:** Embracing change
+  **中:** 拥抱变化
+
+---
+
+### **Extreme Programming (XP)**
+
+**极限编程（XP）**
+
+* **EN:** First agile methodology emphasizing simplicity, feedback, and courage.
+
+* **中:** 第一个敏捷方法论，强调简单、反馈和勇气。
+
+* **Practices（实践）**
+
+  * Pair Programming（结对编程）
+  * Continuous Integration（持续集成）
+
+---
+
+## 🔹 Part C：Advanced Models
+
+## 第三部分：进阶模型
+
+---
+
+### **Incremental Model**
+
+**增量模型**
+
+* **Concept（概念）**
+
+  * **EN:** Core functions delivered first, additional features added later.
+  * **中:** 先交付核心功能，再逐步增加附加功能。
+
+* **Process（过程）**
+
+```
+Analysis → Design → Code → Test
+分析 → 设计 → 编码 → 测试
+```
+
+（多次迭代）
+
+* **Advantages（优点）**
+
+  * Early delivery of working system
+  * Useful when staff is unavailable
+  * Improved risk management
+  * **中:** 提早交付可运行系统、适合人手不足情况、风险更易控制
+
+* **Disadvantages（缺点）**
+
+  * **EN:** Hard to estimate time and cost accurately
+  * **中:** 时间与成本估算较困难，需要全面规划
+
+---
+
+### **Component-Based Software Engineering (CBSE)**
+
+**基于构件的软件工程（CBSE）**
+
+* **Definition（定义）**
+
+  * **EN:** Software reuse approach — “Buy, don’t build.”
+  * **中:** 基于软件重用的开发方式 —— “买来用，而不是自己写”。
+
+* **Shift（转变）**
+
+  * **EN:** Focus shifts from programming to composing systems.
+  * **中:** 开发重点从编程转向系统组装。
+
+---
+
+### **Essentials of CBSE**
+
+**CBSE 核心要素**
+
+* Independent components（独立组件）
+* Component standards（组件标准）
+* Middleware（中间件）
+* Reuse-oriented development process（面向复用的开发流程）
+
+---
+
+### **Component Model**
+
+**组件模型**
+
+* **EN:** Defines standards for component implementation and deployment.
+
+* **中:** 定义组件实现与部署的标准。
+
+* **Examples（例子）**
+
+  * EJB
+  * COM+
+  * CORBA
+
+---
+
+### **Domain Engineering**
+
+**领域工程**
+
+* **EN:** Identifying and constructing reusable components for a specific domain.
+* **中:** 为特定领域识别并构建可复用组件。
+
+---
+
+### **Challenges of CBSE**
+
+**CBSE 面临的挑战**
+
+* **Component trustworthiness**（组件可信度：无源代码）
+* **Component certification**（组件认证）
+* **Predicting emergent properties**（难以预测系统整体行为）
+* **Requirement trade-offs**（需求取舍困难）
+
+---
+
+### **Failure Case**
+
+**失败案例**
+
+* **EN:** Ariane 5 rocket failure due to reuse of a component from Ariane 4.
+* **中:** Ariane 5 火箭因复用 Ariane 4 的组件而导致失败。
+
+---
+
+如果你要的是：
+
+* ✨ **考试版精简总结**
+* 📄 **Lecture slide 风格**
+* 🧠 **对比表格（Model vs Model）**
+
+直接跟我说，我可以再帮你整理一版。
