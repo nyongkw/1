@@ -1,0 +1,127 @@
+以下是为您准备的 **Chapter 5 (a) & (b) 编程范式 (Programming Paradigms)** 的详细章节总结。
+
+我已按照您的要求，采用了**Markdown 排版**、**中英文对照**以及**逐项解释**的格式，方便您直接复制到 GitHub。
+
+---
+
+# 编程范式笔记 (Programming Paradigms Notes)
+
+## Chapter 5 (a): 编程范式导论 - 第一部分 (Introduction to Programming Paradigms - Part 1)
+
+### 1. 编程范式定义 (Definition of Programming Paradigms)
+
+* **Definition (定义)**: A programming paradigm forms the foundation for the design of any software or programming language. It is a style of programming expressing the programmer’s intent and an approach to solving problems.
+* 编程范式是任何软件或编程语言设计的基础。它是一种表达程序员意图的编程风格，也是解决问题的方法。
+
+
+* **Role (角色)**: Understanding various paradigms is crucial for selecting the most suitable programming approaches.
+* 理解各种范式对于选择最合适的编程方法至关重要。
+
+
+
+### 2. 命令式编程 (Imperative Programming)
+
+* **Concept (概念)**: The oldest programming paradigm. It describes computation in terms of statements that change a program state. It focuses on **"How"** to achieve the goal.
+* 最古老的编程范式。它通过改变程序状态的语句来描述计算。它关注**“如何”**实现目标。
+
+
+* **Procedural Programming (过程式编程)**: A subtype of imperative programming based on the concept of procedure calls.
+* 命令式编程的一个子类，基于过程调用（函数）的概念。
+
+
+* **Object-Oriented Programming (面向对象编程/OOP)**: Organizes software design around data, or objects, rather than functions and logic.
+* 围绕数据或对象（而非函数和逻辑）来组织软件设计。
+
+
+
+### 3. 事件驱动编程 (Event-Driven Programming)
+
+* **Event Listener (事件监听器)**: A function that waits for an event to occur (e.g., `OnClick()`, `OnLoad()`) and then responds to it.
+* 等待事件发生（如点击、加载）并做出响应的函数。
+
+
+* **Event Handler (事件处理器)**: Routines that contain the actual logic to react to the events.
+* 包含处理事件实际逻辑的程序。
+
+
+* **Supported Languages (支持的语言)**: VB.net, C#, Java.
+
+---
+
+## Chapter 5 (b): 编程范式导论 - 第二部分 (Introduction to Programming Paradigms - Part 2)
+
+### 1. 声明式编程 (Declarative Programming)
+
+* **Concept (概念)**: A style that conveys the reasoning behind a calculation without explaining its control flow. It focuses on the **"What"** (the objective).
+* 一种表达计算逻辑而不解释其控制流的风格。它关注**“要做什么”**（目标）。
+
+
+* **Features (特性)**:
+* **Concentrate on the Objective**: Specify the intended result, and the computer determines the steps.
+* **专注于目标**：指定预期的结果，由计算机确定步骤。
+
+
+* **Abstraction of Control Flow**: Eliminates the necessity to define the precise order of operations.
+* **控制流抽象**：消除了定义精确操作顺序的必要性。
+
+
+
+
+* **Examples (示例)**: SQL, HTML, Prolog.
+
+### 2. 函数式编程 (Functional Programming)
+
+* **Concept (概念)**: A subtype of declarative programming that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.
+* 声明式编程的一个子类，将计算视为数学函数的求值，并避免改变状态和可变数据。
+
+
+* **Pure Functions (纯函数)**: Functions where the output is determined only by the input, without side effects.
+* 输出仅由输入决定且无副作用的函数。
+
+
+
+### 3. 基于自动机的编程 (Automata-based Programming)
+
+* **Concept (概念)**: A paradigm where the program or its parts are thought of as a model of a finite state machine or any other formal automaton.
+* 一种将程序或其部分视为有限状态机或其他形式自动机模型的范式。
+
+
+* **Characteristics (特性)**:
+* **State-driven**: The behavior is determined by the current state.
+* **状态驱动**：行为由当前状态决定。
+
+
+* **Transitions**: Defined by rules that dictate how to move between states.
+* **转换**：由规定状态间迁移方式的规则定义。
+
+
+* **Predictability**: Offers high control and simplifies reasoning about system behavior.
+* **可预测性**：提供高度控制并简化了对系统行为的推导。
+
+
+
+
+
+### 4. 自动机类型 (Types of Automata)
+
+* **Finite State Machine (FSM/有限状态机)**: Models of systems with a limited number of states.
+* 具有有限数量状态的系统模型。
+
+
+* **Turing Machine (图灵机)**: A mathematical model of computation that manipulates symbols on a strip of tape.
+* 一种在纸带上操作符号的数学计算模型。
+
+
+
+---
+
+## 核心术语对照表 (Key Glossary)
+
+| 英文 (English) | 中文 (Chinese) | 解释 (Explanation) |
+| --- | --- | --- |
+| **Paradigm** | **范式** | A style or approach to programming. |
+| **Imperative** | **命令式** | Focuses on the steps ("How"). |
+| **Declarative** | **声明式** | Focuses on the result ("What"). |
+| **Side Effect** | **副作用** | A change in state outside the local environment. |
+| **State Transition** | **状态转换** | Moving from one state to another based on inputs. |
+| **Abstraction** | **抽象** | Hiding complex details to focus on high-level logic. |
