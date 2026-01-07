@@ -1,0 +1,404 @@
+这份文档已经为你整理完毕，采用清晰的层级结构（Q1a 至 Q1d），方便你直接打印或查阅。
+
+---
+
+# AMIT1014 Past Year Exam - Question 1 Full Solution
+
+## Q1(a): Explain the following terms (术语解释)
+
+* **(i) Hypertext Transport Protocol (HTTP)**
+* **Answer:** HTTP is the underlying protocol used by the World Wide Web to transmit hypermedia documents (such as HTML). It functions as a request-response protocol in the client-server computing model.
+* **中文解释:** HTTP 是万维网用于传输超媒体文档（如 HTML）的基础协议。它在客户端-服务器模型中作为“请求-响应”协议运行。
+
+
+* **(ii) Web Client**
+* **Answer:** A web client is a software application, typically a web browser (like Chrome or Firefox), that communicates with a web server to request, receive, and display web resources to the user.
+* **中文解释:** Web 客户端是一种软件应用程序（通常指浏览器），它与服务器通信以请求并展示网页资源。
+
+
+* **(iii) Web Server**
+* **Answer:** A web server is a computer program (or hardware) that stores, processes, and delivers web pages to clients. It listens for incoming HTTP requests and serves the requested files.
+* **中文解释:** Web 服务器是存储、处理并向客户端交付网页的程序或硬件。它负责监听 HTTP 请求并提供相应文件。
+
+
+
+---
+
+## Q1(b): Role of Web Technologies (技术角色)
+
+| 技术 | 主要角色 (Role) | 中文说明 |
+| --- | --- | --- |
+| **(i) HTML** | Defines the **structure and content** of a web page. | 定义网页的结构和内容。 |
+| **(ii) JS** | Manages the **behavior and interactivity** on the client-side. | 管理网页在客户端的行为和交互。 |
+| **(iii) CSS** | Handles the **presentation and styling** (layout, colors). | 处理网页的外观、样式和布局。 |
+| **(iv) PHP** | A **server-side** language for backend logic and database interaction. | 用于后端逻辑、数据库交互的服务器端语言。 |
+
+---
+
+## Q1(c): Empty Element (空元素)
+
+* **Definition:** An empty element (or void element) is an HTML element that cannot have any child nodes (no content inside) and **does not require a closing tag**.
+* **中文定义:** 空元素是没有子节点（内部无内容）且不需要闭合标签的 HTML 元素。
+* **Examples:**
+* `<br>` (换行)
+* `<img>` (图片)
+* `<hr>` (水平线)
+
+
+
+---
+
+## Q1(d): HTML Code Requirements (代码实现)
+
+* **(i) Set character encoding to UTF-8:**
+```html
+<meta charset="utf-8">
+
+```
+
+
+* **(ii) Link to "web_sidemap.css" style sheet:**
+```html
+<link rel="stylesheet" href="web_sidemap.css">
+
+```
+
+
+* **(iii) Display heading text:**
+```html
+<h1>Welcome to Web-Based Integrated Systems</h1>
+
+```
+
+
+* **(iv) Hypertext link for "Emergency Call" (+60123457777):**
+```html
+<a href="tel:+60123457777">Emergency Call</a>
+
+```
+# AMIT1014 – Web-Based Integrated Systems
+
+## Model Answers (Formatted for GitHub)
+
+---
+
+## Question 2(c): External CSS
+
+### (i) Change all heading 2 and heading 4 to italic style with a font size of 13pt. (3 marks)
+
+**Answer (External CSS):**
+
+```css
+h2, h4 {
+    font-style: italic;
+    font-size: 13pt;
+}
+```
+
+**Explanation:**
+
+* `h2, h4` selects both heading elements.
+* `font-style: italic` sets italic text.
+* `font-size: 13pt` sets the font size as specified.
+
+---
+
+### (ii) Set the footer element to display text with a line height of 9em, horizontally centred, and a letter spacing of 0.7em. (4 marks)
+
+**Answer (External CSS):**
+
+```css
+footer {
+    line-height: 9em;
+    text-align: center;
+    letter-spacing: 0.7em;
+}
+```
+
+**Explanation:**
+
+* `line-height` controls vertical spacing between lines.
+* `text-align: center` centres text horizontally.
+* `letter-spacing` controls spacing between characters.
+
+---
+
+## Question 2(b): HTML Form Input Controls
+
+### Given Figure 2, write the necessary HTML code to place the specified input controls. (Total: 10 marks)
+
+---
+
+### (i) Set the Order ID textbox with the name and id as `ordID` and the placeholder text as *Enter your ID*. (3 marks)
+
+**Answer (HTML):**
+
+```html
+<label for="ordID">Order ID:</label>
+<input type="text" name="ordID" id="ordID" placeholder="Enter your ID">
+```
+
+**Explanation:**
+
+* `type="text"` creates a textbox.
+* `name` and `id` are set to `ordID` as required.
+* `placeholder` displays hint text inside the textbox.
+
+---
+
+### (ii) Set the Time picker with the name and id as `ordTime` to display 10:00 AM by default, with an acceptable range between 10:00 and 21:00. (4 marks)
+
+**Answer (HTML):**
+
+```html
+<label for="ordTime">Time:</label>
+<input type="time"
+       name="ordTime"
+       id="ordTime"
+       value="10:00"
+       min="10:00"
+       max="21:00">
+```
+
+**Explanation:**
+
+* `type="time"` creates a time picker input.
+* `value="10:00"` sets the default time (24-hour format).
+* `min` and `max` restrict the allowed time range.
+
+---
+
+### (iii) Set the Sample Picture file picker with the name and id as `ordFile` allowing only JPG and PNG files. (3 marks)
+
+**Answer (HTML):**
+
+```html
+<label for="ordFile">Sample Picture:</label>
+<input type="file"
+       name="ordFile"
+       id="ordFile"
+       accept=".jpg,.png">
+```
+
+**Explanation:**
+
+* `type="file"` allows file upload.
+* `accept` restricts the file types to JPG and PNG.
+
+---
+
+### Combined Safe Examination Answer
+
+```html
+<form>
+
+  <label for="ordID">Order ID:</label>
+  <input type="text" name="ordID" id="ordID" placeholder="Enter your ID">
+  <br><br>
+
+  <label for="ordTime">Time:</label>
+  <input type="time"
+         name="ordTime"
+         id="ordTime"
+         value="10:00"
+         min="10:00"
+         max="21:00">
+  <br><br>
+
+  <label for="ordFile">Sample Picture:</label>
+  <input type="file"
+         name="ordFile"
+         id="ordFile"
+         accept=".jpg,.png">
+
+</form>
+```
+
+---
+
+## Question 3(a): jQuery Selectors
+
+### (i) $("h3#laksa") (1 mark)
+
+**Answer:**
+
+> Selects the `h3` element with the id `laksa`.
+
+**Explanation:**
+
+* `h3` selects the heading level 3 element.
+* `#laksa` specifies the id attribute.
+
+---
+
+### (ii) $("h2").css("color", "yellow") (1 mark)
+
+**Answer:**
+
+> Changes the text color of all `h2` elements to yellow.
+
+**Explanation:**
+
+* `$("h2")` selects all h2 elements.
+* `.css("color", "yellow")` applies the CSS color property.
+
+---
+
+## Question 3(b): PHP switch Statement Using match Expression (6 marks)
+
+**Given switch statement:**
+
+```php
+switch ($prod_code) {
+    case 400:
+        $prod_grade = 'A';
+        break;
+    case 500:
+    case 600:
+        $prod_grade = 'B';
+        break;
+    default:
+        $prod_grade = 'X';
+        break;
+}
+```
+
+**Rewritten using `match`:**
+
+```php
+$prod_grade = match ($prod_code) {
+    400 => 'A',
+    500, 600 => 'B',
+    default => 'X',
+};
+```
+
+**Explanation:**
+
+* `match` returns a value directly.
+* No `break` statement is required.
+* Multiple cases can be grouped together.
+
+---
+
+## Question 3(c): PHP Arrays
+
+### (i) Compare indexed array and associative array. (4 marks)
+
+| Indexed Array            | Associative Array         |
+| ------------------------ | ------------------------- |
+| Uses numeric indexes     | Uses string keys          |
+| Index starts from 0      | Keys are meaningful names |
+| Accessed by index number | Accessed by key name      |
+
+**Explanation:**
+
+* Indexed arrays use numbers as keys.
+* Associative arrays use descriptive keys.
+
+---
+
+### (ii) Create an associative array named `fruit_price`. (4 marks)
+
+**Answer (PHP):**
+
+```php
+$fruit_price = [
+    "banana" => 4.50,
+    "apple"  => 0.70,
+    "orange" => 1.20
+];
+```
+
+**Explanation:**
+
+* The left side is the key.
+* The right side is the value.
+* `=>` maps keys to values.
+
+---
+
+## Question 3(c): PHP & MySQL
+
+### Select and display all product information from `tblProduct`. (10 marks)
+
+**Answer (PHP):**
+
+```php
+<?php
+$sql = "SELECT * FROM tblProduct";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    echo "<table border='1'>";
+    echo "<tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+          </tr>";
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "<tr>";
+        echo "<td>" . $row['prodID'] . "</td>";
+        echo "<td>" . $row['prodName'] . "</td>";
+        echo "<td>" . $row['prodPrice'] . "</td>";
+        echo "</tr>";
+    }
+
+    echo "</table>";
+} else {
+    echo "No product found.";
+}
+?>
+```
+
+**Explanation:**
+
+* Executes a SQL SELECT query.
+* Uses `mysqli_fetch_assoc()` to retrieve records.
+* Displays results in an HTML table.
+* Handles the case when no records are found.
+
+---
+
+**End of Model Answers**
+
+---
+
+
+## Question 4
+
+### a) Advantages of Using PHP Data Object (PDO)
+
+1. **Database portability**  
+   PDO supports multiple database systems using the same code structure.
+
+2. **Prepared statements**  
+   PDO uses prepared statements which help prevent SQL injection attacks.
+
+3. **Error handling**  
+   PDO provides advanced error handling through exception handling.
+
+4. **Object-oriented approach**  
+   PDO follows object-oriented principles, making the code cleaner and easier to maintain.
+
+---
+
+### b) PDO Approach – Retrieve Book Records
+
+```php
+try {
+    $pdo = new PDO("mysql:host=localhost;dbname=library", "root", "");
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "SELECT * FROM book";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        echo $row['Book_ID'] . " - " . $row['Book_Name'] . "<br>";
+    }
+
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
