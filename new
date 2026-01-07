@@ -1,0 +1,277 @@
+好，小凯 👍
+下面是**【只要答案】**，已经帮你整理成 **GitHub / Markdown 友好格式**，
+👉 你可以**整段直接 copy** 放进 GitHub repo（README.md / answers.md 都可以）。
+
+---
+
+```md
+# AMIT1014 – Web-Based Integrated Systems  
+## Answers
+
+---
+
+## Question 1
+
+### a) Differences between HTTP and HTTPS
+
+HTTP (HyperText Transfer Protocol) and HTTPS (HyperText Transfer Protocol Secure) differ in several ways:
+
+1. HTTP transfers data in plain text, while HTTPS encrypts data using SSL/TLS.
+2. HTTP is not secure, whereas HTTPS provides secure communication.
+3. HTTP does not verify website identity, while HTTPS uses digital certificates.
+4. HTTP data can be intercepted or modified, while HTTPS ensures data integrity.
+5. HTTP uses port 80, whereas HTTPS uses port 443.
+
+---
+
+### b) Concepts
+
+#### (i) Web Server  
+A web server is a system that stores, processes, and delivers web pages to clients over the Internet using HTTP or HTTPS.  
+Example: Apache Web Server, Nginx.
+
+#### (ii) Web Client  
+A web client is an application that requests and displays web content from a web server.  
+Example: Google Chrome, Mozilla Firefox.
+
+---
+
+### c) Static Web Pages  
+Static web pages are pages whose content does not change dynamically and are delivered to users exactly as stored on the server without server-side processing.
+
+---
+
+### d) Server-side Dynamic Pages
+
+When a user requests a server-side dynamic page, the browser sends an HTTP request to the web server.  
+The web server executes a server-side script such as PHP.  
+The script may retrieve data from a database.  
+After processing, HTML is dynamically generated and returned to the browser.
+
+---
+
+## Question 2
+
+### a)(i) Folder Hierarchy
+
+```
+
+university
+│
+├── faculty
+│   ├── science
+│   │   ├── chemistry.html
+│   │   └── biology.html
+│   └── arts
+│       ├── history.html
+│       └── languages
+│           └── french.html
+│
+└── about.html
+
+````
+
+---
+
+### a)(ii) Relative Paths  
+(Current directory: `/university/faculty/arts`)
+
+- chemistry.html → `../science/chemistry.html`
+- biology.html → `../science/biology.html`
+- history.html → `history.html`
+- french.html → `languages/french.html`
+- about.html → `../../about.html`
+
+---
+
+### b) Web Technologies
+
+**HTML (HyperText Markup Language)**  
+Used to create the structure and content of web pages.
+
+**CSS (Cascading Style Sheets)**  
+Used to style and format HTML elements.
+
+**PHP (Hypertext Preprocessor)**  
+A server-side scripting language used to create dynamic web pages.
+
+---
+
+### c) Ways to Add CSS
+
+1. Inline CSS – applied directly within HTML elements.
+2. Internal CSS – written inside the `<style>` tag in the `<head>` section.
+3. External CSS – written in a separate `.css` file and linked to HTML.
+
+---
+
+## Question 3
+
+### a) Loosely-Typed Programming Language
+
+PHP is a loosely-typed programming language, meaning variables do not require explicit data type declaration and PHP performs automatic type conversion.
+
+**Advantages:**
+1. Faster development.
+2. Flexible variable usage.
+
+**Disadvantages:**
+1. Runtime type errors.
+2. Harder debugging due to automatic type conversion.
+
+---
+
+### b)(i) Associative Array
+
+```php
+$country = array(
+    "Malaysia" => "Kuala Lumpur",
+    "Thailand" => "Bangkok",
+    "France" => "Paris",
+    "Germany" => "Berlin"
+);
+````
+
+---
+
+### b)(ii) Sort by Key (Ascending)
+
+```php
+ksort($country);
+```
+
+---
+
+### c) Differences between Sessions and Cookies
+
+| Aspect    | Sessions                 | Cookies           |
+| --------- | ------------------------ | ----------------- |
+| Storage   | Server-side              | Client-side       |
+| Security  | More secure              | Less secure       |
+| Lifetime  | Ends when browser closes | Can be persistent |
+| Data Size | Larger                   | Limited           |
+
+---
+
+好 👍
+下面我已经**帮你整理成「适合直接 copy 到 GitHub（README / assignment）」的 Markdown 排版**，
+结构清楚、专业、不多不少，**老师或助教一看就懂**。
+
+你只要 **整段复制 → 贴到 GitHub** 就可以了。
+
+---
+
+````markdown
+# Question 4 – PHP Data Object (PDO)
+
+---
+
+## a) Advantages of Using PHP Data Object (PDO)
+
+1. **Database Independent**  
+   PDO supports multiple database systems such as MySQL, PostgreSQL, and SQLite.  
+   This allows developers to switch databases with minimal code changes.
+
+2. **Prepared Statements**  
+   PDO provides prepared statements which help prevent SQL Injection attacks by separating SQL logic from user input.
+
+3. **Better Error Handling**  
+   PDO supports exception-based error handling using `try-catch`, making debugging and error management easier.
+
+4. **Object-Oriented Interface**  
+   PDO follows an object-oriented approach, resulting in cleaner, more structured, and more maintainable code.
+
+---
+
+## b) Using PDO Approach
+
+### (i) PHP Code to Connect to Database
+
+```php
+<?php
+$host = "localhost";
+$dbname = "productDB";
+$username = "Jacky";
+$password = "tarumt";
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Database connected successfully";
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+?>
+````
+
+---
+
+### (ii) PHP Code to Select and Display All Records from Book Table
+
+```php
+<?php
+$host = "localhost";
+$dbname = "productDB";
+$username = "Jacky";
+$password = "tarumt";
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "SELECT * FROM Book";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        echo "Book ID: " . $row['Book_ID'] . "<br>";
+        echo "Book Name: " . $row['Book_Name'] . "<br><br>";
+    }
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+?>
+```
+
+---
+
+## c) Practices to Improve Database Security
+
+1. **Use Prepared Statements**
+   Prepared statements help prevent SQL injection attacks.
+
+2. **Apply Proper User Privileges**
+   Database users should be granted only the minimum permissions required.
+
+3. **Encrypt Passwords**
+   Sensitive data such as passwords should be stored using hashing algorithms like bcrypt.
+
+---
+
+## d) Authentication
+
+**Authentication** is the process of verifying a user's identity before granting access to a system or database.
+
+**Example:**
+A user enters a username and password on a login page.
+The system validates the credentials against the database.
+If the credentials are correct, access is granted; otherwise, access is denied.
+
+```
+
+---
+
+### ✅ 这个排版适合：
+- GitHub README.md  
+- Assignment 提交  
+- LMS / Turnitin  
+- 老师人工检查  
+
+如果你要：
+- 🔹 **更简短版本（只留拿分句）**
+- 🔹 **加上 Table of Contents**
+- 🔹 **改成报告风 / 学术一点**
+- 🔹 **帮你写 commit message**
+
+直接跟我说 👍
+```
